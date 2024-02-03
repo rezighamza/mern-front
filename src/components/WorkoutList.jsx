@@ -5,7 +5,7 @@ import WorkoutDetails from './WorkoutDetails'
 const WorkoutList = () => {
   const [workouts, setWorkouts] = useState([])
   useEffect(() => {
-    axios.get('http://localhost:3300/api/workouts/')
+    axios.get('https://ttmern-app.onrender.com/api/workouts/')
     .then(res => {
       setWorkouts(res.data)
     })
