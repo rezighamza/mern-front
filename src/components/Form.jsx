@@ -19,7 +19,7 @@ const Form = () => {
     }
     const addWorkout = (e) => {
         e.preventDefault()
-        axios.post('https://ttmern-app.onrender.com/api/workouts.', workout)
+        axios.post('https://ttmern-app.onrender.com/api/workouts', workout)
         .then(res => {
             console.log(res)
         })
