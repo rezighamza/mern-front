@@ -2,7 +2,7 @@ import { formatDistanceToNow } from 'date-fns'
 import axios from 'axios' 
 const WorkoutDetails = ({ workout }) => {
   const handelDelete = ()=>{
-    axios.delete(`https://ttmern-app.onrender.com/api/workouts/${workout._id}`)
+    axios.delete(`https://ttmern-app.onrender.com/api/workouts/${workout._id}.`)
   }
   return (
     <div className="workout">
